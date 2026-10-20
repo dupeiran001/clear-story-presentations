@@ -31,7 +31,7 @@ Claude Code can load skills from a personal `~/.claude/skills/` directory or a r
 **Personal installation** (available across local projects):
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/clear-story-presentations.git \
+git clone https://github.com/dupeiran001/clear-story-presentations.git \
   ~/.claude/skills/clear-story-presentations
 ```
 
@@ -39,11 +39,11 @@ git clone https://github.com/YOUR_USERNAME/clear-story-presentations.git \
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/YOUR_USERNAME/clear-story-presentations.git \
+git clone https://github.com/dupeiran001/clear-story-presentations.git \
   .claude/skills/clear-story-presentations
 ```
 
-Replace `YOUR_USERNAME` with the publisher's GitHub username **after the repository is published**. You can also download the repo as a ZIP, extract it, and copy the **whole `clear-story-presentations/` folder** into either skills directory. On Windows, use the same relative directories under your home or project folder and copy the folder with File Explorer or PowerShell.
+Replace `dupeiran001` with the publisher's GitHub username **after the repository is published**. You can also download the repo as a ZIP, extract it, and copy the **whole `clear-story-presentations/` folder** into either skills directory. On Windows, use the same relative directories under your home or project folder and copy the folder with File Explorer or PowerShell.
 
 For non-Claude agents, consult their [Agent Skills](https://agentskills.io/specification) support and skill-discovery paths; compatibility has not been verified on every agent runtime.
 
