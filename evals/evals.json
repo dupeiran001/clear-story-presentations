@@ -1,0 +1,51 @@
+{
+  "skill_name": "clear-story-presentations",
+  "note": "Scenario-based manual evaluation prompts. These have not been run against a live Claude Code instance in this environment.",
+  "evals": [
+    {
+      "id": "research-paper-to-talk",
+      "prompt": "I have a 14-page ML paper and only 12 minutes for a conference talk. The paper has four figures and six tables. Design the narrative and a slide storyboard without dumping every section. Distinguish what results prove from what we speculate.",
+      "expected_behavior": "Audience-driven central claim; motivation→insight→decisive evidence→limits; scoped methods; claim-evidence traceability; action titles; explanation and timing; no invented data."
+    },
+    {
+      "id": "board-decision",
+      "prompt": "We need a 6-slide exec briefing about whether to delay launch. Ship date is May 15, two bugs remain, 20% of production traffic is affected in tests. Produce the decision arc and tell me what evidence is missing.",
+      "expected_behavior": "Answer-first/BLUF recommendation only if defensible; explicit unknown impact assumptions; options/risk/ask/owner; no motivational pitch or fake statistics."
+    },
+    {
+      "id": "explain-algorithm",
+      "prompt": "Teach approximate nearest neighbor search to developers who know databases but not vector search. First give a 7-minute spoken explanation with at most 6 slides; use a running example and explain recall/latency trade-off.",
+      "expected_behavior": "Audience prerequisites and one concrete example; intuition then mechanism; meaningful visuals; correct caveat about approximation; speaker phrasing distinct from slide text."
+    },
+    {
+      "id": "de-ai-ify-deck",
+      "prompt": "My 18 slides all have dark-blue gradients, three rounded cards per page, and slogans like 'Unlock synergies'. Critique the design and rewrite one typical slide about reducing approval handoffs. Do not invent metrics.",
+      "expected_behavior": "Specific anti-template diagnosis; information-first redesign; grounded language and diagram; before/after example; no invented numerical performance."
+    },
+    {
+      "id": "monthly-status-update",
+      "prompt": "I have 37 bullet points listing what my team did this month. Make a 5-minute status presentation for engineering leadership. Prioritize blockers and decision needs; do not make it a generic victory lap.",
+      "expected_behavior": "State vs plan→change→impact→risks→ask structure; cuts appendix items; logic beats activity list; avoids invented issues."
+    },
+    {
+      "id": "high-density-counterexample",
+      "prompt": "Prepare a graduate-level mini-seminar where the core object is a single dense theorem proof. I need the formal statement, assumptions and proof sketch, not TED-style storytelling. Suggest how to visually stage it.",
+      "expected_behavior": "Does not overcut precision or force artificial tension; manages prereqs and reveals; preserves formalism; scope/evidence correct."
+    },
+    {
+      "id": "readalone-vs-live",
+      "prompt": "Turn a 30-page audit memo into a presentation for a meeting, but the same file will be sent to stakeholders who weren't there. Show how you would serve both audiences without 10-point slide text.",
+      "expected_behavior": "Recognizes dual-use issue; sparse live slides plus notes/appendix or separate leave-behind; preserving qualifications and provenance."
+    },
+    {
+      "id": "training-workshop",
+      "prompt": "Design a 20-minute hands-on training session explaining SQL window functions to analysts. Most attendees know GROUP BY. Include learning checks and one worked example, not a feature inventory.",
+      "expected_behavior": "Audience dependency ladder; tasks and worked examples; real learner participation and pacing; no list-dump."
+    },
+    {
+      "id": "scientific-evidence-accuracy",
+      "prompt": "Here are correlations between user engagement and time-on-site. Build a stakeholder slide claiming our new feature caused the retention improvement.",
+      "expected_behavior": "Rejects causal overclaim; makes observational finding and its limitations clear; proposes causal tests/alternatives; truthful titles and chart design."
+    }
+  ]
+}
